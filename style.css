@@ -1,0 +1,121 @@
+/* Reset default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eed5d5;
+}
+
+/* (1.) Header section */
+header {
+    text-align: center;
+    color: rgb(66, 50, 50);
+}
+
+/* (2.) Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    background-color: #8b7f7f;
+    padding: 15px 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.list {
+    list-style-type: upper-roman;
+    padding-left: 40px;
+    font-size: large; 
+    margin: 20px 0; 
+}
+
+
+.list li {
+    margin-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(66, 50, 50);
+    padding: 10px 15px;
+}
+
+nav ul {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+/* (3.) Article section */
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: rgb(66, 50, 50);
+    padding-bottom: 7%;
+    padding-top: 5%;
+    margin-left: 10px;
+    
+}
+
+ol {
+    list-style-type: lower-roman;
+    padding-left: 20px;
+    font-size: large;
+    margin: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+.media-section {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.media-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+
+.media-content video,
+.media-content audio {
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+/* (4.) Footer section */
+footer {
+    background-color: #8b7f7f; 
+    color: rgb(66, 50, 50);
+    text-align: center;
+    padding: 20px 0; 
+    margin-top: 40px; 
+    font-size: 16px;
+}
+
